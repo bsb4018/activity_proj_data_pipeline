@@ -28,12 +28,13 @@ is written using Python.<br>
 ![Data Pipeline Diagram](https://github.com/bsb4018/activity_proj_data_pipeline/blob/main/screenshots/data_pipeline_diagram.png)
 
 <br>
-## Pre-Requisites
+
+## Pre Requisites
+
 The main pre-requisites for this project are - <br>
 Confluence Kafka Account With a Setup Cluster and Schema<br>
 MongoDB Cloud Atlas Database and Collection<br>
 Python v3.8.13 <br>
-
 
 ## Environment Variables
 
