@@ -16,7 +16,7 @@ Each record in the dataset consists of - <br>
   (total acceleration) and the estimated body acceleration.<br>
 • Triaxial Angular velocity from the gyroscope.<br>
 • A 561-feature vector with time and frequency domain variables.<br>
-• An identifier of the subject who carried out the experiment
+• An identifier of the subject who carried out the experiment.<br>
 • Its activity label.<br>
 
 
