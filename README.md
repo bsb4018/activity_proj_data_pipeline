@@ -1,4 +1,3 @@
-
 # Activity Prediction - Data Collection Pipeline
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)<space><space>![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-000?style=for-the-badge&logo=apachekafka)<space><space>![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
@@ -26,7 +25,9 @@ is used to collect data in a streaming fashion in json format and
 store it inside collections defined in MongoDB. This whole process 
 is written using Python.<br>
 
+![Data Pipeline Diagram](https://github.com/bsb4018/activity_proj_data_pipeline/blob/main/screenshots/data_pipeline_diagram.png)
 
+<br>
 ## Pre-Requisites
 The main pre-requisites for this project are - <br>
 Confluence Kafka Account With a Setup Cluster and Schema<br>
@@ -48,6 +49,8 @@ following environment variables to your system <br>
 `SCHEMA_REGISTRY_API_KEY` = Confluence Kafka Cluster Schema Registry Api Key <br>
 `SCHEMA_REGISTRY_API_SECRET` = Confluence Kafka Cluster Schema Registry Api Secret Key <br>
 `MONGO_DB_URL` =  Mongo DB Atlast Database Url <br>
+
+
 
 
 ## Run 
