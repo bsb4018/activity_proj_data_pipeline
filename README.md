@@ -12,7 +12,7 @@ angular velocity at a constant rate of 50Hz.<br>
 
 A vector of features  is obtained by calculating variables from 
 the time and frequency domain. <br>
-Each record in the dataset consists of -
+Each record in the dataset consists of - <br>
 • Triaxial acceleration from the accelerometer 
   (total acceleration) and the estimated body acceleration.<br>
 • Triaxial Angular velocity from the gyroscope.<br>
@@ -22,15 +22,35 @@ Each record in the dataset consists of -
 
 
 The data is streaming data hence a streaming platform Apache Kafka 
-is used to collect data in a streaming fashion and store it inside 
-collections defined in MongoDB. This whole process is written 
-using Python.<br>
+is used to collect data in a streaming fashion in json format and 
+store it inside collections defined in MongoDB. This whole process 
+is written using Python.<br>
 
 
-# confluent-kafka-python
+## Pre-Requisites
+The main pre-requisites for this project are - <br>
+Confluence Kafka Account With a Setup Cluster and Schema<br>
+MongoDB Cloud Atlas Database and Collection<br>
+Python v3.8.13 <br>
 
 
-This repo help us to know how to publish and consume data to and from kafka confluent in json format.
+## Environment Variables
+
+To run this project, you will need to add the 
+following environment variables to your system <br>
+
+`SECURITY_PROTOCOL` = Denotes the default security Protocol ("SASL_SSL") <br>
+`SSL_MACHENISM`= Denotes the SSL Mechanism to use ("PLAIN") <br>
+`API_KEY` = Confluence Kafka Cluster Api Key <br>
+`API_SECRET_KEY` = Confluence Kafka Cluster Api Secret Key <br>
+`BOOTSTRAP_SERVER` = Confluence Kafka Cluster Bootstrap Server Url <br>
+`ENDPOINT_SCHEMA_URL`  = Confluence Kafka Cluster Schema Endpoint <br>
+`SCHEMA_REGISTRY_API_KEY` = Confluence Kafka Cluster Schema Registry Api Key <br>
+`SCHEMA_REGISTRY_API_SECRET` = Confluence Kafka Cluster Schema Registry Api Secret Key <br>
+`MONGO_DB_URL` =  Mongo DB Atlast Database Url <br>
+
+
+## Run 
 
 Step 1: Create a conda environment
 ```
@@ -50,4 +70,11 @@ Step4:
 ```
 pip install -r requirements.txt
 ```
-
+Step5:
+```
+python consumer.py
+```
+Step6:
+```
+python producer.py
+```

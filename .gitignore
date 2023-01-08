@@ -7,3 +7,5 @@ logs/*
 *.pyc
 Credential.md
 env/
+__pycache__
+logs/
